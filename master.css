@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --p-cyan:hsl(179, 62%, 43%);
+    --p-yellow:hsl(71, 73%, 54%);
+    --s-Lgray: hsl(204, 43%, 93%);
+    --s-blue:hsl(218, 22%, 67%);
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    background-color: var(--s-blue);
+}
+main {
+    max-width: 700px;
+    margin: 100px auto;
+}
+.container {
+    width: 85%;
+    margin: auto;
+}
+main {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.container main .block {
+    width: 100%;
+    padding: 25px 30px; 
+    background-color:white;  
+    line-height: 1.5;
+}
+.container main .block h2 {
+    margin: 0 0 15px;
+    color: var(--p-cyan);
+    font-size: 1.5em;
+}
+.container main .block h3{
+      margin: 0 0 10px;
+      color: var(--p-yellow);
+      font-size: 1.1em;
+}
+.container main .block p {
+   color: var(--p-cyan);
+   font-size: 0.8rem;
+   width: 80%;
+}
+main .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+}
+main .grid .item {
+    padding: 25px 30px; 
+}
+main .grid .item h4 {
+    color: var(--s-Lgray);
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+main .grid .item .mon {
+     display: flex;
+     gap: 5px;
+     align-items: center;
+     padding-bottom: 3px;
+
+}
+main .grid .item .mon h1 {
+    color: white;
+    font-size: 2rem;
+}
+main .grid .item  h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+main .grid .item .mon p {
+    color: var(--s-Lgray);
+    font-size: 0.8rem;
+}
+main .grid > .item > p {
+    color: var(--s-Lgray);
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+}
+main .grid .item a {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--p-yellow);
+ 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+main .grid .item:first-child {
+    background-color: #29a189;
+}
+main .grid .item:last-child {
+    background-color: var(--p-cyan);
+    line-height: 1.4;
+}
+footer {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
